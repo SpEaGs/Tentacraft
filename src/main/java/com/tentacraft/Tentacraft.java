@@ -5,7 +5,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.tentacraft.proxy.Common;
-import com.tentacraft.Ref;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
@@ -15,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Ref.MODID, version = Ref.VERSION)
+@Mod(modid = Ref.MODID, version = Ref.VERSION, name = Ref.NAME)
 public class Tentacraft
 {
     
@@ -23,6 +22,7 @@ public class Tentacraft
 	
     @SidedProxy(clientSide="com.tentacraft.proxy.Client", serverSide="com.tentacraft.proxy.Server")
     public static Common proxy;
+    
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)

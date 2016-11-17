@@ -5,7 +5,8 @@ import com.tentacraft.items.RegisterItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class CreativeTab extends CreativeTabs {
+public class CreativeTab extends CreativeTabs
+{
 
 	public CreativeTab()
 	{
