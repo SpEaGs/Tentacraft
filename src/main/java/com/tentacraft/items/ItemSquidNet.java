@@ -8,10 +8,9 @@ import net.minecraft.util.ResourceLocation;
 public class ItemSquidNet extends Item 
 {
 
-	public ItemSquidNet(String unlocalizedName, String registryName)
+	public ItemSquidNet()
 	{
-		this.setUnlocalizedName(unlocalizedName);
-		this.setRegistryName(new ResourceLocation(Ref.MODID, registryName));
+		
 	}
 	
 }
