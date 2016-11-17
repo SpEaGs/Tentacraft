@@ -17,7 +17,7 @@ public class Tentacraft
     public static final String MODID = "tentacraft";
     public static final String VERSION = "1.0";
     
-    @SidedProxy(clientSide="com.tentacraft.proxy.Common", serverSide="com.tentacraft.proxy.Server")
+    @SidedProxy(clientSide="com.tentacraft.proxy.Client", serverSide="com.tentacraft.proxy.Common")
     public static Common proxy;
 
     @EventHandler

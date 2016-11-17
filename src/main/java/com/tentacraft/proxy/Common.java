@@ -9,10 +9,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Common {
 	public void preInit(FMLPreInitializationEvent e) {
 		Tentacraft.log("Preinit");
+		com.tentacraft.items.RegisterItems.RegisterAll();
     }
 
     public void init(FMLInitializationEvent e) {
     	Tentacraft.log("Init");
+    	
     }
 
     public void postInit(FMLPostInitializationEvent e) {
