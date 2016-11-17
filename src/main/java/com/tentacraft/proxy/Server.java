@@ -10,14 +10,14 @@ public class Server extends Common{
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
 		
-		Tentacraft.log("Preinit");
+		Tentacraft.log().info("Preinit");
     }
 	@Override
     public void init(FMLInitializationEvent e) {
-		Tentacraft.log("Init");
+		Tentacraft.log().info("Init");
     }
 	@Override
     public void postInit(FMLPostInitializationEvent e) {
-		Tentacraft.log("PostInit");
+		Tentacraft.log().info("PostInit");
     }
 }

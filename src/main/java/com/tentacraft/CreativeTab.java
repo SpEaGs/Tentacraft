@@ -15,7 +15,7 @@ public class CreativeTab extends CreativeTabs {
 	@Override
 	public ItemStack getTabIconItem()
 	{
-		 return new ItemStack(RegisterItems.ItemSquidNet, 1);
+		 return new ItemStack(RegisterItems.ItemTentacle, 1);
 	}
 
 }
