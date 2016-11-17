@@ -2,6 +2,7 @@ package com.tentacraft;
 
 import com.tentacraft.proxy.Common;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -13,6 +14,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Tentacraft
 {
     
+	public static final CreativeTabs items = new CreativeTab();
+	
     @SidedProxy(clientSide="com.tentacraft.proxy.Client", serverSide="com.tentacraft.proxy.Server")
     public static Common proxy;
 

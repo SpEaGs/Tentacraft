@@ -1,5 +1,7 @@
 package com.tentacraft.items;
 
+import com.tentacraft.Tentacraft;
+
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -14,6 +16,7 @@ public class RegisterItems {
 	public static void RegisterItem(Item item, String name){
 		item.setRegistryName(name);
 		item.setUnlocalizedName(name);
+		item.setCreativeTab(Tentacraft.items);
 		GameRegistry.register(item);
 	}
 	
