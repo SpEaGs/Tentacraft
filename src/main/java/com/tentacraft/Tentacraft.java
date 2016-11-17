@@ -4,9 +4,11 @@ package com.tentacraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.tentacraft.eventHandlers.DropEventHandler;
 import com.tentacraft.proxy.Common;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -27,6 +29,7 @@ public class Tentacraft
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)
     {
+    	MinecraftForge.EVENT_BUS.register(new DropEventHandler());
         proxy.preInit(e);
     }
 

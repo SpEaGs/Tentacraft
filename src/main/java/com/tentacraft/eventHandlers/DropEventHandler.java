@@ -1,4 +1,4 @@
-package com.tentacraft;
+package com.tentacraft.eventHandlers;
 
 import com.tentacraft.items.RegisterItems;
 
@@ -10,7 +10,6 @@ import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod.EventBusSubscriber
 public class DropEventHandler 
 {
 	@SubscribeEvent
