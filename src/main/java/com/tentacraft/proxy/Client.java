@@ -1,5 +1,7 @@
 package com.tentacraft.proxy;
 
+import com.tentacraft.Tentacraft;
+
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -7,7 +9,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Client extends Common{
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
-
+		Tentacraft.log("PreinitClient");
+		com.tentacraft.items.RegisterItems.RegisterAll();
     }
 	@Override
     public void init(FMLInitializationEvent e) {
