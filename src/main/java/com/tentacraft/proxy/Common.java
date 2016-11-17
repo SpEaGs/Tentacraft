@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class Common
 {
+	
 	public void preInit(FMLPreInitializationEvent e)
 	{
 		
@@ -20,4 +21,5 @@ public class Common
     {
     	
     }
+    
 }

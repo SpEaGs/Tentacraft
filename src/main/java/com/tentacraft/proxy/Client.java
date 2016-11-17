@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class Client extends Common
 {
+	
 	@Override
 	public void preInit(FMLPreInitializationEvent e)
 	{
@@ -25,4 +26,5 @@ public class Client extends Common
 	{
 
     }
+	
 }

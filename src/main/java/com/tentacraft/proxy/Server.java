@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class Server extends Common
 {
+	
 	@Override
 	public void preInit(FMLPreInitializationEvent e)
 	{
@@ -23,4 +24,5 @@ public class Server extends Common
 	{
 		Tentacraft.log().info("PostInit");
     }
+	
 }

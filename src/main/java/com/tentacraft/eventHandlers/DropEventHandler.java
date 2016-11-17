@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class DropEventHandler 
 {
+	
 	@SubscribeEvent
 	public void addDrops(LivingDropsEvent e)
 	{
