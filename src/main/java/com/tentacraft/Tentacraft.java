@@ -4,7 +4,7 @@ package com.tentacraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.tentacraft.eventHandlers.DropEventHandler;
+import com.tentacraft.Handlers.DropEventHandler;
 import com.tentacraft.proxy.Common;
 
 import net.minecraft.creativetab.CreativeTabs;

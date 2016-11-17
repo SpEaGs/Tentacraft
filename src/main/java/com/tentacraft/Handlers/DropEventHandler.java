@@ -1,4 +1,4 @@
-package com.tentacraft.eventHandlers;
+package com.tentacraft.Handlers;
 
 import com.tentacraft.Utils;
 import com.tentacraft.items.RegisterItems;

@@ -2,10 +2,10 @@ package com.tentacraft.items;
 
 import net.minecraft.item.Item;
 
-public class ItemSquidNet extends Item 
+public class ItemSquidNetFull extends Item
 {
 
-	public ItemSquidNet()
+	public ItemSquidNetFull()
 	{
 		maxStackSize = 1;
 	}

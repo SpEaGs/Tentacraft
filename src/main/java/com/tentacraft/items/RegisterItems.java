@@ -15,13 +15,17 @@ public class RegisterItems
 	public static final ItemSquidNet ItemSquidNet = new ItemSquidNet(); 
 	public static final String ItemSquidNetName = "ItemSquidNet";
 	
+	public static final ItemSquidNetFull ItemSquidNetFull = new ItemSquidNetFull();
+	public static final String ItemSquidNetFullName = "ItemSquidNetFull";
+	
 	public static final ItemTentacle ItemTentacle = new ItemTentacle();
 	public static final String ItemTentacleName = "ItemTentacle";
 	
 	public static void RegisterAll()
 	{
-		registerItem(ItemTentacle, ItemTentacleName);
 		registerItem(ItemSquidNet, ItemSquidNetName);
+		registerItem(ItemSquidNetFull, ItemSquidNetFullName);
+		registerItem(ItemTentacle, ItemTentacleName);
 	}
 	
 	public static void registerItem(Item item, String name)
@@ -31,7 +35,8 @@ public class RegisterItems
 		item.setCreativeTab(Tentacraft.items);
 		GameRegistry.register(item);
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(Ref.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
-		Tentacraft.log().info("Registered: " + name );
+		Tentacraft.log().info("Registered: " + name);
+		
 	}
 	
 }
