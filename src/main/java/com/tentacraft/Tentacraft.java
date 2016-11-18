@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.tentacraft.Handlers.DropEventHandler;
 import com.tentacraft.Handlers.RecipeHandler;
+import com.tentacraft.blocks.RegisterBlocks;
 import com.tentacraft.items.RegisterItems;
 import com.tentacraft.proxy.Common;
 
@@ -17,8 +18,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
-import net.minecraftforge.client.model.ModelLoader;
 
 @Mod(modid = Ref.MODID, version = Ref.VERSION, name = Ref.NAME)
 public class Tentacraft
@@ -38,6 +37,8 @@ public class Tentacraft
     	
         RegisterItems.init();
         RegisterItems.registerItems();
+        RegisterBlocks.init();
+        RegisterBlocks.registerBlocks();
 
         proxy.preInit(e);
     }
@@ -46,7 +47,9 @@ public class Tentacraft
     public void init(FMLInitializationEvent e)
     {
     	Tentacraft.log().info("Initializing...");
+    	
     	RecipeHandler.registerRecipes();
+    	
         proxy.init(e);
     }
 
@@ -54,6 +57,7 @@ public class Tentacraft
     public void postInit(FMLPostInitializationEvent e)
     {
     	Tentacraft.log().info("Post-Initializing...");
+    	
         proxy.postInit(e);
     }
     

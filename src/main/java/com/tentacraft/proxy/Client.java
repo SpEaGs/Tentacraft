@@ -2,6 +2,7 @@ package com.tentacraft.proxy;
 
 import com.tentacraft.Tentacraft;
 import com.tentacraft.Handlers.RecipeHandler;
+import com.tentacraft.blocks.RegisterBlocks;
 import com.tentacraft.items.RegisterItems;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,6 +16,8 @@ public class Client extends Common
 	public void preInit(FMLPreInitializationEvent e)
 	{
 		RegisterItems.registerRenders();
+		RegisterBlocks.registerRenders();
+		
 		Tentacraft.log().info("Pre-Init Complete!");
     }
 	@Override

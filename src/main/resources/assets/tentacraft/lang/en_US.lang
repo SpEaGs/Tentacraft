@@ -3,4 +3,6 @@ item.ItemCalamari.name=Calamari
 item.ItemSquidNet.name=Squid Net (empty)
 item.ItemSquidNetFull.name=Squid Net (full)
 
+tile.BlockSquidChest.name=Squid Chest
+
 itemGroup.Tentacraft=Tentacraft

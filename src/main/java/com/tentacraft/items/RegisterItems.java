@@ -53,7 +53,7 @@ public class RegisterItems
 		item.setUnlocalizedName(name);
 		item.setCreativeTab(Tentacraft.items);
 		GameRegistry.register(item);
-		Tentacraft.log().info("Registered: " + name);
+		Tentacraft.log().info("Registered Item: " + name);
 		
 	}
 	
