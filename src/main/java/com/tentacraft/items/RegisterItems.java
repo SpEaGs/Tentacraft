@@ -18,14 +18,18 @@ public class RegisterItems
 	public static final ItemSquidNetFull ItemSquidNetFull = new ItemSquidNetFull();
 	public static final String ItemSquidNetFullName = "ItemSquidNetFull";
 	
-	public static final ItemTentacle ItemTentacle = new ItemTentacle();
+	public static final ItemTentacle ItemTentacle = new ItemTentacle(3, 0.2f, false);
 	public static final String ItemTentacleName = "ItemTentacle";
+	
+	public static final ItemCalamari ItemCalamari = new ItemCalamari(6, 0.7f, false);
+	public static final String ItemCalamariName = "ItemCalamari";
 	
 	public static void RegisterAll()
 	{
 		registerItem(ItemSquidNet, ItemSquidNetName);
 		registerItem(ItemSquidNetFull, ItemSquidNetFullName);
 		registerItem(ItemTentacle, ItemTentacleName);
+		registerItem(ItemCalamari, ItemCalamariName);
 	}
 	
 	public static void registerItem(Item item, String name)
