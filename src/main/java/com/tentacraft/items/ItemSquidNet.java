@@ -20,8 +20,6 @@ public class ItemSquidNet extends Item
 	public ItemSquidNet()
 	{
 		maxStackSize = 1;
-		
-
 	}
 	@Override
 	public boolean itemInteractionForEntity(ItemStack stack, EntityPlayer Player, EntityLivingBase Target, EnumHand Hand) {
@@ -30,11 +28,12 @@ public class ItemSquidNet extends Item
 				Target.setDead();
 				int slot = Player.inventory.currentItem;
 				Player.inventory.setInventorySlotContents(slot, new ItemStack(RegisterItems.ItemSquidNetFull,1));
-				
+				return true;
 			}
 		}
 		return false;
-		
 	}
+	
+	
 	
 }
