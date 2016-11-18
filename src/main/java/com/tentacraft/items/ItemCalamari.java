@@ -1,5 +1,8 @@
 package com.tentacraft.items;
 
+import com.tentacraft.Ref;
+import com.tentacraft.Tentacraft;
+
 import net.minecraft.item.ItemFood;
 
 public class ItemCalamari extends ItemFood

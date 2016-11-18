@@ -14,19 +14,18 @@ public class Client extends Common
 	@Override
 	public void preInit(FMLPreInitializationEvent e)
 	{
-		Tentacraft.log().info("PreinitClient");
-		RegisterItems.RegisterAll();
+		RegisterItems.registerRenders();
+		Tentacraft.log().info("Pre-Init Complete!");
     }
 	@Override
     public void init(FMLInitializationEvent e)
 	{
-		Tentacraft.log().info("InitClient");
-		RecipeHandler.registerRecipes();
+		Tentacraft.log().info("Init Complete!");
     }
 	@Override
     public void postInit(FMLPostInitializationEvent e)
 	{
-
+    	Tentacraft.log().info("Post-Init Complete! Hello world!");
     }
 	
 }

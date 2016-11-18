@@ -1,5 +1,9 @@
 package com.tentacraft.proxy;
 
+import com.tentacraft.Tentacraft;
+import com.tentacraft.Handlers.RecipeHandler;
+import com.tentacraft.items.RegisterItems;
+
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

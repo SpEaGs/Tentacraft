@@ -1,5 +1,7 @@
 package com.tentacraft.items;
 
+import com.tentacraft.Ref;
+import com.tentacraft.Tentacraft;
 import com.tentacraft.Utils;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +22,6 @@ public class ItemTentacle extends ItemFood
 	public ItemTentacle(int healAmount, float saturationModifier, boolean wolvesFav)
 	{
 		super(healAmount, saturationModifier, wolvesFav);
-		this.setAlwaysEdible();
 	}
 	
 	@Override
