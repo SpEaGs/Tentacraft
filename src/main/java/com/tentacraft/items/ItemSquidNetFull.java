@@ -30,11 +30,8 @@ public class ItemSquidNetFull extends Item
 		{
 			Entity squid = new EntitySquid(world);
 			BlockPos pos2 = pos.offset(facing);
-<<<<<<< HEAD
 			squid.setPositionAndRotation(pos2.getX()+0.5, pos2.getY(), pos2.getZ()+0.5, player.cameraYaw, player.cameraPitch);
-=======
 			squid.setPositionAndRotation(pos.getX(), pos.getY()+1, pos.getZ(), player.cameraYaw, player.cameraPitch);
->>>>>>> master
 			world.spawnEntityInWorld(squid);
 			int slot = player.inventory.currentItem;
 			player.inventory.setInventorySlotContents(slot, new ItemStack(RegisterItems.ItemSquidNet,1));
