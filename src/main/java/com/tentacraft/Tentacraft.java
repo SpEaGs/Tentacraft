@@ -9,6 +9,8 @@ import com.tentacraft.Handlers.RecipeHandler;
 import com.tentacraft.blocks.RegisterBlocks;
 import com.tentacraft.items.RegisterItems;
 import com.tentacraft.proxy.Common;
+import com.tentacraft.tileEntities.RegisterTileEntities;
+import com.tentacraft.tileEntities.TE_SquidChest;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,6 +20,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Ref.MODID, version = Ref.VERSION, name = Ref.NAME)
 public class Tentacraft
@@ -39,6 +42,9 @@ public class Tentacraft
         RegisterItems.registerItems();
         RegisterBlocks.init();
         RegisterBlocks.registerBlocks();
+        RegisterTileEntities.registerTileEntities();
+        
+        GameRegistry.registerTileEntity(TE_SquidChest.class, "TE_SquidChest");
 
         proxy.preInit(e);
     }

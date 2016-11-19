@@ -2,6 +2,8 @@ package com.tentacraft.blocks;
 
 import java.util.Random;
 
+import com.tentacraft.tileEntities.TE_SquidChest;
+
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -39,10 +41,20 @@ public class BlockSquidChest extends BlockContainer
 //		}
 //		return true;
 //	}
+	
+	public boolean isOpaqueCube()
+	{
+		return false;
+	}
+	
+	public int getRenderType()
+	{
+		return -1;
+	}
 
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta)
 	{
-		return null;
+		return new TE_SquidChest();
 	}
 }
