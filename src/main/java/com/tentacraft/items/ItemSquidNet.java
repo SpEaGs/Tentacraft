@@ -21,6 +21,7 @@ public class ItemSquidNet extends Item
 	{
 		maxStackSize = 1;
 	}
+	
 	@Override
 	public boolean itemInteractionForEntity(ItemStack stack, EntityPlayer Player, EntityLivingBase Target, EnumHand Hand) {
 		if(Target!=null &&Target instanceof EntitySquid){
