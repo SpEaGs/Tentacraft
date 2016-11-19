@@ -49,9 +49,5 @@ public class TE_TentaclicConverter extends InventoryBasic implements IEnergyRece
 		return internalstorage.receiveEnergy(maxReceive, simulate);
 	}
 
-	@Override
-	public TileEntity createNewTileEntity(World worldIn, int meta) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }
