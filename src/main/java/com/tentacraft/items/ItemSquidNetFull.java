@@ -1,5 +1,7 @@
 package com.tentacraft.items;
 
+import com.tentacraft.Tentacraft;
+
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.passive.EntitySquid;
 import net.minecraft.entity.player.EntityPlayer;
@@ -23,18 +25,18 @@ public class ItemSquidNetFull extends Item
 	public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand,
 									  EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
+		Entity squid = new EntitySquid(world);
+		double posX = pos.getX(); double posY = pos.getY(); double posZ = pos.getZ();
+		squid.posX = posX; squid.posY = posY; squid.posZ = posZ;
+		world.spawnEntityInWorld(squid);
+		Tentacraft.log().info(squid.toString());
 		if(!world.isRemote)
 		{
-			Entity squid = new EntitySquid(world);
-			squid.posX = hitX;
-			squid.posY = hitY;
-			squid.posZ = hitZ;
-			world.spawnEntityInWorld(squid);
 			int slot = player.inventory.currentItem;
 			player.inventory.setInventorySlotContents(slot, new ItemStack(RegisterItems.ItemSquidNet,1));
 			return EnumActionResult.SUCCESS;
 		}
-		return EnumActionResult.FAIL;
+		return EnumActionResult.SUCCESS;
 	}
 	
 }
