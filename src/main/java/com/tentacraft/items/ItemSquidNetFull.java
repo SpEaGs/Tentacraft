@@ -25,18 +25,20 @@ public class ItemSquidNetFull extends Item
 	public EnumActionResult onItemUse(EntityPlayer player, World world, BlockPos pos, EnumHand hand,
 									  EnumFacing facing, float hitX, float hitY, float hitZ)
 	{
-		Entity squid = new EntitySquid(world);
-		double posX = pos.getX(); double posY = pos.getY(); double posZ = pos.getZ();
-		squid.posX = posX; squid.posY = posY; squid.posZ = posZ;
-		world.spawnEntityInWorld(squid);
-		Tentacraft.log().info(squid.toString());
+		
+		
+		
 		if(!world.isRemote)
 		{
+			Entity squid = new EntitySquid(world);
+			squid.setPositionAndRotation(pos.getX(), pos.getY()+1, pos.getZ(), player.cameraYaw, player.cameraPitch);
+			world.spawnEntityInWorld(squid);
+			Tentacraft.log().info(squid.toString());
 			int slot = player.inventory.currentItem;
 			player.inventory.setInventorySlotContents(slot, new ItemStack(RegisterItems.ItemSquidNet,1));
 			return EnumActionResult.SUCCESS;
 		}
-		return EnumActionResult.SUCCESS;
+		return EnumActionResult.FAIL;
 	}
 	
 }
