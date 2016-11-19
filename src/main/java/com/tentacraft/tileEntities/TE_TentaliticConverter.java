@@ -5,17 +5,20 @@ import cofh.api.energy.IEnergyProvider;
 import cofh.api.energy.IEnergyReceiver;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.Container;
 import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
 
-public class TE_TentaclicConverter extends InventoryBasic implements IEnergyReceiver, IEnergyProvider{
+public class TE_TentaliticConverter extends Container  implements IEnergyReceiver, IEnergyProvider{
 	private EnergyStorage internalstorage;
+	private InventoryBasic inventory;
+	public TE_TentaliticConverter(){
 	
-	public TE_TentaclicConverter(){
-	
-		super("Tentalitic Converter",true, 1);
+		super();
+		inventory = new InventoryBasic("Tentalitic Converter", true,1);
 		internalstorage = new EnergyStorage(10000, 25000, 25000);
 	}
 
@@ -47,6 +50,12 @@ public class TE_TentaclicConverter extends InventoryBasic implements IEnergyRece
 	public int receiveEnergy(EnumFacing from, int maxReceive, boolean simulate) {
 		// TODO Auto-generated method stub
 		return internalstorage.receiveEnergy(maxReceive, simulate);
+	}
+
+	@Override
+	public boolean canInteractWith(EntityPlayer playerIn) {
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 
