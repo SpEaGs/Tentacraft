@@ -31,6 +31,7 @@ public class ItemSquidNetFull extends Item
 		if(!world.isRemote)
 		{
 			Entity squid = new EntitySquid(world);
+			BlockPos pos2 = pos.offset(facing);
 			squid.setPositionAndRotation(pos.getX(), pos.getY()+1, pos.getZ(), player.cameraYaw, player.cameraPitch);
 			world.spawnEntityInWorld(squid);
 			Tentacraft.log().info(squid.toString());
