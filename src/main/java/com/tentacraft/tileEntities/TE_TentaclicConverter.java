@@ -3,13 +3,19 @@ package com.tentacraft.tileEntities;
 import cofh.api.energy.EnergyStorage;
 import cofh.api.energy.IEnergyProvider;
 import cofh.api.energy.IEnergyReceiver;
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
+import net.minecraft.inventory.InventoryBasic;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.world.World;
 
-public class TE_TentaclicConverter extends TileEntity implements IEnergyReceiver, IEnergyProvider{
+public class TE_TentaclicConverter extends InventoryBasic implements IEnergyReceiver, IEnergyProvider{
 	private EnergyStorage internalstorage;
 	
 	public TE_TentaclicConverter(){
+	
+		super("Tentalitic Converter",true, 1);
 		internalstorage = new EnergyStorage(10000, 25000, 25000);
 	}
 
@@ -41,5 +47,11 @@ public class TE_TentaclicConverter extends TileEntity implements IEnergyReceiver
 	public int receiveEnergy(EnumFacing from, int maxReceive, boolean simulate) {
 		// TODO Auto-generated method stub
 		return internalstorage.receiveEnergy(maxReceive, simulate);
+	}
+
+	@Override
+	public TileEntity createNewTileEntity(World worldIn, int meta) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
