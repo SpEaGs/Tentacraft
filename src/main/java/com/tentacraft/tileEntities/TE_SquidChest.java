@@ -225,7 +225,7 @@ public class TE_SquidChest extends TileEntity implements IInventory
 		{
 			NBTTagCompound stackTag = list.getCompoundTagAt(i);
 			int slot = stackTag.getByte("Slot") & 255;
-			this.setInventorySlotContents(slot, ItemStack(stackTag));
+			ItemStack.setInventorySlotContents(slot, ItemStack(stackTag));
 		}
 	}
 	

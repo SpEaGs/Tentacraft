@@ -17,6 +17,7 @@ public class DropEventHandler
 	public void addDrops(LivingDropsEvent e)
 	{
 		addSquidDrops(e, RegisterItems.ItemTentacle, Utils.random(0, 3));
+		addSquidDrops(e, RegisterItems.ItemGlowingTentacle, Utils.perChance(10));
 	}
 	
 	public void addSquidDrops(LivingDropsEvent e, Item item, int i)
