@@ -27,7 +27,7 @@ public class ItemGlowingTentacle extends ItemFood
 	{
 		if(!world.isRemote)
 		{
-			player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 10, 10, true, true));
+			player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 600, 10, true, true));
 			if(result()<=10)
 			{
 				player.addPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 10, true, true));

@@ -45,6 +45,8 @@ public class RegisterItems
 	
 	public static void registerItems()
 	{
+		Tentacraft.log().info("Registering Items...");
+		
 		registerItem(ItemSquidNet, ItemSquidNetName);
 		registerItem(ItemSquidNetFull, ItemSquidNetFullName);
 		registerItem(ItemMonochromeInk, ItemMonochromeInkName);
@@ -53,10 +55,14 @@ public class RegisterItems
 		registerItem(ItemCalamari, ItemCalamariName);
 		registerItem(ItemGlowingTentacle, ItemGlowingTentacleName);
 		registerItem(ItemGlowingCalamari, ItemGlowingCalamariName);
+		
+		Tentacraft.log().info("Done!");
 	}
 	
 	public static void registerRenders()
 	{
+		Tentacraft.log().info("Registering Item Renders...");
+		
 		registerRender(ItemSquidNet, ItemSquidNetName);
 		registerRender(ItemSquidNetFull, ItemSquidNetFullName);
 		registerRender(ItemMonochromeInk, ItemMonochromeInkName);
@@ -65,6 +71,8 @@ public class RegisterItems
 		registerRender(ItemCalamari, ItemCalamariName);
 		registerRender(ItemGlowingTentacle, ItemGlowingTentacleName);
 		registerRender(ItemGlowingCalamari, ItemGlowingCalamariName);
+		
+		Tentacraft.log().info("Done!");
 	}
 	
 	public static void registerItem(Item item, String name)
@@ -73,14 +81,12 @@ public class RegisterItems
 		item.setUnlocalizedName(name);
 		item.setCreativeTab(Tentacraft.items);
 		GameRegistry.register(item);
-		Tentacraft.log().info("Registered Item: " + name);
 		
 	}
 	
 	public static void registerRender(Item item, String name)
 	{
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(Ref.MODID, item.getUnlocalizedName().substring(5)), "inventory"));
-		Tentacraft.log().info("Registered Model: " + name);
 	}
 	
 }

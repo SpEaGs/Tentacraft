@@ -43,6 +43,14 @@ public class RecipeHandler
 		GameRegistry.addShapelessRecipe(new ItemStack(RegisterItems.ItemBioluminescentDust, 4), new Object[] {RegisterItems.ItemGlowingTentacle});
 		//Bioluminescent Dust (from Glowing Calamari)
 		GameRegistry.addShapelessRecipe(new ItemStack(RegisterItems.ItemBioluminescentDust, 2), new Object[] {RegisterItems.ItemGlowingCalamari});
+		//Glowing Tentacle Block
+		GameRegistry.addRecipe(new ItemStack(RegisterBlocks.BlockGlowingTentacleBlock), new Object[] {"GGG", "GGG", "GGG", 'G', RegisterItems.ItemGlowingTentacle});
+		//Glowing Calamari Block
+		GameRegistry.addRecipe(new ItemStack(RegisterBlocks.BlockGlowingCalamariBlock), new Object[] {"GGG", "GGG", "GGG", 'G', RegisterItems.ItemGlowingCalamari});
+		//Glowing Tentacle (from Glowing Tentacle Block)
+		GameRegistry.addShapelessRecipe(new ItemStack(RegisterItems.ItemGlowingTentacle, 9), new Object[] {RegisterBlocks.BlockGlowingTentacleBlock});
+		//Glowing Calamari (from GLowing Calamari Block)
+		GameRegistry.addShapelessRecipe(new ItemStack(RegisterItems.ItemGlowingCalamari, 9), new Object[] {RegisterBlocks.BlockGlowingCalamariBlock});
 		
 	}
 
@@ -55,6 +63,8 @@ public class RecipeHandler
 		GameRegistry.addSmelting(RegisterBlocks.BlockTentacleBlock, new ItemStack(RegisterBlocks.BlockCalamariBlock, 1), 0.7f);
 		//Glowing Calamari
 		GameRegistry.addSmelting(RegisterItems.ItemGlowingTentacle, new ItemStack(RegisterItems.ItemGlowingCalamari, 1), 0.7f);
+		//Glowing Calamari Block
+		GameRegistry.addSmelting(RegisterBlocks.BlockGlowingTentacleBlock, new ItemStack(RegisterBlocks.BlockGlowingCalamariBlock), 0.7f);
 	}
 
 }

@@ -13,7 +13,7 @@ public class Utils
 	public static int perChance(int chance)
 	{
 		int i = ThreadLocalRandom.current().nextInt(0, 101);
-		if(i>=chance)
+		if(i<=chance)
 		{
 			return 1;
 		}

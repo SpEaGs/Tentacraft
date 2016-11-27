@@ -11,15 +11,11 @@ import net.minecraft.world.World;
 
 public class ItemGlowingCalamari extends ItemFood
 {
-
-	public int result()
-	{
-		return Utils.random(0, 100);
-	}
 	
 	public ItemGlowingCalamari(int healAmount, float saturationModifier, boolean wolvesFav)
 	{
 		super(healAmount, saturationModifier, wolvesFav);
+		this.setAlwaysEdible();
 	}
 	
 	@Override
@@ -27,10 +23,10 @@ public class ItemGlowingCalamari extends ItemFood
 	{
 		if(!world.isRemote)
 		{
-			player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 10, 10, true, true));
-			player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 10, 10, true, true));
-			player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 10, 10, true, true));
-			player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 10, 10, true, true));
+			player.addPotionEffect(new PotionEffect(MobEffects.GLOWING, 160, 0, true, true));
+			player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 160, 1, true, true));
+			player.addPotionEffect(new PotionEffect(MobEffects.HASTE, 160, 1, true, true));
+			player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 160, 0, true, true));
 		}
 	}
 	
