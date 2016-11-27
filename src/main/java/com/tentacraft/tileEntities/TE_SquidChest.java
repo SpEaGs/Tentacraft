@@ -194,27 +194,27 @@ public class TE_SquidChest extends TileEntity implements IInventory
 		}
 	}
 	
-	@Override
-	public void writeToNBT(NBTTagCompound nbt)
-	{
-		super.writeToNBT(nbt);
-		NBTTagList list = new NBTTagList();
-		for(int i=0; i<this.getSizeInventory(); ++i)
-		{
-			if(this.getStackInSlot(i) != null)
-			{
-				NBTTagCompound stackTag = new NBTTagCompound();
-				stackTag.setByte("Slot", ((byte)i));
-				this.getStackInSlot(i).writeToNBT(stackTag);
-				list.appendTag(stackTag);
-			}
-		}
-		nbt.setTag("Items", list);
-		if(this.hasCustomName())
-		{
-			nbt.setString("CustomName", this.getCustomName());
-		}
-	}
+//	@Override
+//	public void writeToNBT(NBTTagCompound nbt)
+//	{
+//		super.writeToNBT(nbt);
+//		NBTTagList list = new NBTTagList();
+//		for(int i=0; i<this.getSizeInventory(); ++i)
+//		{
+//			if(this.getStackInSlot(i) != null)
+//			{
+//				NBTTagCompound stackTag = new NBTTagCompound();
+//				stackTag.setByte("Slot", ((byte)i));
+//				this.getStackInSlot(i).writeToNBT(stackTag);
+//				list.appendTag(stackTag);
+//			}
+//		}
+//		nbt.setTag("Items", list);
+//		if(this.hasCustomName())
+//		{
+//			nbt.setString("CustomName", this.getCustomName());
+//		}
+//	}
 	
 	@Override
 	public void readFromNBT(NBTTagCompound nbt)
@@ -225,14 +225,14 @@ public class TE_SquidChest extends TileEntity implements IInventory
 		{
 			NBTTagCompound stackTag = list.getCompoundTagAt(i);
 			int slot = stackTag.getByte("Slot") & 255;
-			ItemStack.setInventorySlotContents(slot, ItemStack(stackTag));
+//			ItemStack.setInventorySlotContents(slot, ItemStack(stackTag));
 		}
 	}
 	
-	@Override
-	public void ItemStack(NBTTagCompound tag)
-	{
-		super.ItemStack(tag);
-	}
+//	@Override
+//	public void ItemStack(NBTTagCompound tag)
+//	{
+//		super.ItemStack(tag);
+//	}
 	
 }
