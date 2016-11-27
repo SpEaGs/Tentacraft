@@ -10,6 +10,7 @@ public class BlockGlowingCalamariBlock extends Block
 	{
 		super(Material.WOOD);
 		this.setLightLevel(0.5f);
+		this.setHardness(0.6f);
 	}
 	
 }

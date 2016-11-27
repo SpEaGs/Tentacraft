@@ -9,7 +9,7 @@ public class BlockTentacleBlock extends Block
 	public BlockTentacleBlock()
 	{
 		super(Material.WOOD);
+		this.setHardness(0.4f);
 	}
-	
 	
 }

@@ -17,6 +17,7 @@ public class BlockSquidChest extends BlockContainer
 	public BlockSquidChest()
 	{
 		super(Material.WOOD);
+		this.setHardness(0.8f);
 	}
 	
 	@Override

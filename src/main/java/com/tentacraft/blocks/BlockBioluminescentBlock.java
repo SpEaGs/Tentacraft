@@ -10,6 +10,7 @@ public class BlockBioluminescentBlock extends Block
 	{
 		super(Material.ROCK);
 		this.setLightLevel(1.0f);
+		this.setHardness(0.8f);
 	}
 	
 }

@@ -9,6 +9,7 @@ public class BlockMonochromaticBlock extends Block
 	public BlockMonochromaticBlock()
 	{
 		super(Material.ROCK);
+		this.setHardness(0.8f);
 	}
 	
 }
