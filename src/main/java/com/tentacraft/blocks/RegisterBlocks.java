@@ -2,6 +2,8 @@ package com.tentacraft.blocks;
 
 import com.tentacraft.Ref;
 import com.tentacraft.Tentacraft;
+import com.tentacraft.tileEntities.TE_SquidChest;
+import com.tentacraft.tileEntities.TE_TentaliticConverter;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
@@ -22,6 +24,7 @@ public class RegisterBlocks
 	public static Block BlockBioluminescentBlock;
 	public static Block BlockGlowingTentacleBlock;
 	public static Block BlockGlowingCalamariBlock;
+	public static Block BlockTentaliticConverterBlock;
 	
 	public static ItemBlock BlockSquidChestItem;
 	public static ItemBlock BlockTentacleBlockItem;
@@ -30,6 +33,7 @@ public class RegisterBlocks
 	public static ItemBlock BlockBioluminescentBlockItem;
 	public static ItemBlock BlockGlowingTentacleBlockItem;
 	public static ItemBlock BlockGlowingCalamariBlockItem;
+	public static ItemBlock BlockTentaliticConverterItem;
 	
 	public static final String BlockSquidChestName = "BlockSquidChest";
 	public static final String BlockTentacleBlockName = "BlockTentacleBlock";
@@ -38,6 +42,7 @@ public class RegisterBlocks
 	public static final String BlockBioluminescentBlockName = "BlockBioluminescentBlock";
 	public static final String BlockGlowingTentacleBlockName = "BlockGlowingTentacleBlock";
 	public static final String BlockGlowingCalamariBlockName = "BlockGlowingCalamariBlock";
+	public static final String BlockTentaliticConverterName = "BlockTentaliticConverterBlock";
 	
 	public static void init()
 	{
@@ -61,6 +66,9 @@ public class RegisterBlocks
 		
 		BlockGlowingCalamariBlock = new BlockGlowingCalamariBlock();
 		BlockGlowingCalamariBlockItem = new ItemBlock(BlockGlowingCalamariBlock);
+		
+		BlockTentaliticConverterBlock = new BlockTentaliticConverter();
+		BlockTentaliticConverterItem = new ItemBlock(BlockTentaliticConverterBlock);
 	}
 	
 	public static void registerBlocks()
@@ -74,7 +82,9 @@ public class RegisterBlocks
 		registerBlock(BlockBioluminescentBlock, BlockBioluminescentBlockItem, BlockBioluminescentBlockName);
 		registerBlock(BlockGlowingTentacleBlock, BlockGlowingTentacleBlockItem, BlockGlowingTentacleBlockName);
 		registerBlock(BlockGlowingCalamariBlock, BlockGlowingCalamariBlockItem, BlockGlowingCalamariBlockName);
-		
+		registerBlock(BlockTentaliticConverterBlock, BlockTentaliticConverterItem, BlockTentaliticConverterName);
+		GameRegistry.registerTileEntity(TE_SquidChest.class, "TE_SquidChest");
+		GameRegistry.registerTileEntity(TE_TentaliticConverter.class, "TE_TentaliticConverter");
 		Tentacraft.log().info("Done!");
 	}
 	

@@ -42,10 +42,10 @@ public class BlockSquidChest extends BlockContainer
 //		}
 //		return true;
 //	}
-	
-	public boolean isOpaqueCube()
+	@Override
+	public boolean isOpaqueCube(IBlockState state)
 	{
-		return false;
+		return true;
 	}
 	
 	public int getRenderType()
