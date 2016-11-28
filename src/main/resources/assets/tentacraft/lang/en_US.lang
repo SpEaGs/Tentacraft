@@ -15,5 +15,6 @@ tile.BlockMonochromaticBlock.name=Monochromatic Block
 tile.BlockBioluminescentBlock.name=Bioluminescent Block
 
 tile.BlockSquidChest.name=Squid Chest
+tile.BlockTentalyticConverter.name=Tentalytic Converter
 
 itemGroup.Tentacraft=Tentacraft

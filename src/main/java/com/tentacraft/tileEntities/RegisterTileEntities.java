@@ -8,21 +8,15 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class RegisterTileEntities
 {
 	
-	public static final String TE_SquidChestName = "TE_SquidChest";
-	
 	public static void registerTileEntities()
 	{
-		registerTileEntity(TE_SquidChest.class, TE_SquidChestName);
+		GameRegistry.registerTileEntity(TE_SquidChest.class, "TE_SquidChest");
+		GameRegistry.registerTileEntity(TE_TentalyticConverter.class, "TE_TentalyticConverter");
 	}
 	
 	public static void registerTERenders()
 	{
 		
-	}
-	
-	public static void registerTileEntity(Class c, String name)
-	{
-		GameRegistry.registerTileEntity(c, name);
 	}
 	
 	public static void registerTERender()

@@ -18,14 +18,14 @@ import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
 
-public class TE_TentaliticConverter extends TileEntityLockable  implements IEnergyReceiver, IEnergyProvider,ISidedInventory{
+public class TE_TentalyticConverter extends TileEntityLockable  implements IEnergyReceiver, IEnergyProvider,ISidedInventory{
 	private EnergyStorage internalstorage;
 	private InventoryBasic inventory;
-	public TE_TentaliticConverter(){
+	public TE_TentalyticConverter(){
 	
 		super();
-		Tentacraft.log().info("Created Tentalitic Converter");
-		inventory = new InventoryBasic("Tentalitic Converter", true,1);
+		Tentacraft.log().info("Created Tentalytic Converter");
+		inventory = new InventoryBasic("Tentalytic Converter", true,1);
 		internalstorage = new EnergyStorage(10000, 25000, 25000);
 		
 	}
