@@ -1,23 +1,24 @@
 package com.tentacraft.proxy;
 
 import com.tentacraft.Tentacraft;
-import com.tentacraft.Handlers.RecipeHandler;
-import com.tentacraft.blocks.RegisterBlocks;
-import com.tentacraft.items.RegisterItems;
 
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class Client extends Common
 {
+	public void registerItemRenderer(Item item, int meta, String id)
+	{
+		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
+	}
 	
 	@Override
 	public void preInit(FMLPreInitializationEvent e)
 	{
-		RegisterItems.registerRenders();
-		RegisterBlocks.registerRenders();
-		
 		Tentacraft.log().info("Pre-Init Complete!");
     }
 	@Override

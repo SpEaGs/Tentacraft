@@ -4,29 +4,24 @@ package com.tentacraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.tentacraft.Handlers.DropEventHandler;
-import com.tentacraft.Handlers.RecipeHandler;
-import com.tentacraft.blocks.RegisterBlocks;
-import com.tentacraft.items.RegisterItems;
+import com.tentacraft.Handlers.ModItems;
+import com.tentacraft.Handlers.ModRecipes;
 import com.tentacraft.proxy.Common;
-import com.tentacraft.tileEntities.RegisterTileEntities;
-import com.tentacraft.tileEntities.TE_SquidChest;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraftforge.common.MinecraftForge;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Ref.MODID, version = Ref.VERSION, name = Ref.NAME)
 public class Tentacraft
 {
     
-	public static final CreativeTabs items = new CreativeTab();
+	public static final CreativeTabs itemTab = new CreativeTab();
 	
     @SidedProxy(clientSide="com.tentacraft.proxy.Client", serverSide="com.tentacraft.proxy.Server")
     public static Common proxy;
@@ -36,15 +31,11 @@ public class Tentacraft
     public void preInit(FMLPreInitializationEvent e)
     {
     	Tentacraft.log().info("Pre-Initializing...");
-    	MinecraftForge.EVENT_BUS.register(new DropEventHandler());
+    	//MinecraftForge.EVENT_BUS.register(new DropEventHandler());
     	
-        RegisterItems.init();
-        RegisterItems.registerItems();
-        RegisterBlocks.init();
-        RegisterBlocks.registerBlocks();
-        RegisterTileEntities.registerTileEntities();
+        //RegisterTileEntities.registerTileEntities();
         
-        GameRegistry.registerTileEntity(TE_SquidChest.class, "TE_SquidChest");
+        //GameRegistry.registerTileEntity(TE_SquidChest.class, "TE_SquidChest");
 
         proxy.preInit(e);
     }
@@ -54,7 +45,7 @@ public class Tentacraft
     {
     	Tentacraft.log().info("Initializing...");
     	
-    	RecipeHandler.registerRecipes();
+    	ModRecipes.init();
     	
         proxy.init(e);
     }

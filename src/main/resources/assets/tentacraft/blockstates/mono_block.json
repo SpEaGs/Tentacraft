@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"normal":{
+			"model": "tentacraft:mono_block"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"normal":{
+			"model": "tentacraft:glow_tentacle_block"
+		}
+	}
+}

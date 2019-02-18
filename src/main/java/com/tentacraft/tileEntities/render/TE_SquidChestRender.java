@@ -8,7 +8,6 @@ import net.minecraft.tileentity.TileEntity;
 public class TE_SquidChestRender extends TileEntitySpecialRenderer
 {
 
-	@Override
 	public void renderTileEntityAt(TileEntity te, double x, double y, double z, float partialTicks, int destroyStage)
 	{
 		GL11.glPushMatrix();

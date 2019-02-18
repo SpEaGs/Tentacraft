@@ -1,0 +1,22 @@
+//Items
+item.tentacle.name=Tentacle
+item.calamari.name=Calamari
+item.squid_net.name=Squid Net (empty)
+item.squid_net_full.name=Squid Net (full)
+item.glow_tentacle.name=Glowing Tentacle
+item.glow_calamari.name=Glowing Calamari
+item.mono_ink.name=Monochrome Ink
+item.biolum_dust.name=Bioluminescent Dust
+
+//Blocks
+tile.tentacle_block.name=Tentacle Block
+tile.calamari_block.name=Calamari Block
+tile.glow_tentacle_block.name=Glowing Tentacle Block
+tile.glow_calamari_block.name=Glowing Calamari Block
+tile.mono_block.name=Monochromatic Block
+tile.biolum_block.name=Bioluminescent Block
+
+//tile.BlockSquidChest.name=Squid Chest
+//tile.BlockTentalyticConverter.name=Tentalytic Converter
+
+itemGroup.Tentacraft=Tentacraft

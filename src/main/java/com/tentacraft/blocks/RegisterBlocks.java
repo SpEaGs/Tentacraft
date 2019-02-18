@@ -49,22 +49,22 @@ public class RegisterBlocks
 		BlockSquidChest = new BlockSquidChest();
 		BlockSquidChestItem = new ItemBlock(BlockSquidChest);
 		
-		BlockTentacleBlock = new BlockTentacleBlock();
+		BlockTentacleBlock = new TentacleBlock();
 		BlockTentacleBlockItem = new ItemBlock(BlockTentacleBlock);
 		
-		BlockCalamariBlock = new BlockCalamariBlock();
+		BlockCalamariBlock = new CalamariBlock();
 		BlockCalamariBlockItem = new ItemBlock(BlockCalamariBlock);
 		
-		BlockMonochromaticBlock = new BlockMonochromaticBlock();
+		BlockMonochromaticBlock = new MonoBlock();
 		BlockMonochromaticBlockItem = new ItemBlock(BlockMonochromaticBlock);
 		
-		BlockBioluminescentBlock = new BlockBioluminescentBlock();
+		BlockBioluminescentBlock = new BiolumBlock();
 		BlockBioluminescentBlockItem = new ItemBlock(BlockBioluminescentBlock);
 		
-		BlockGlowingTentacleBlock = new BlockGlowingTentacleBlock();
+		BlockGlowingTentacleBlock = new GlowTentacleBlock();
 		BlockGlowingTentacleBlockItem = new ItemBlock(BlockGlowingTentacleBlock);
 		
-		BlockGlowingCalamariBlock = new BlockGlowingCalamariBlock();
+		BlockGlowingCalamariBlock = new GlowCalamariBlock();
 		BlockGlowingCalamariBlockItem = new ItemBlock(BlockGlowingCalamariBlock);
 		
 		BlockTentalyticConverterBlock = new BlockTentalyticConverter();
