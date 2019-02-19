@@ -1,5 +1,5 @@
 {
-	"type": "crafting_shapeless",	
+	"type": "minecraft:crafting_shapeless",	
 	"ingredients": 
 	[
 		{
@@ -21,7 +21,7 @@
 	
 	"result":
 	{
-		"item": "tentacraft:tentacle_block"
+		"item": "tentacraft:tentacle_block",
 		"count": 2
 	}
 }

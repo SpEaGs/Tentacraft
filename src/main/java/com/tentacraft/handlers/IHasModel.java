@@ -1,4 +1,4 @@
-package com.tentacraft.Handlers;
+package com.tentacraft.handlers;
 
 public interface IHasModel
 {

@@ -4,14 +4,15 @@ package com.tentacraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.tentacraft.Handlers.ModItems;
-import com.tentacraft.Handlers.ModRecipes;
+import com.tentacraft.handlers.ModItems;
+import com.tentacraft.handlers.ModRecipes;
 import com.tentacraft.proxy.Common;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -20,6 +21,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Ref.MODID, version = Ref.VERSION, name = Ref.NAME)
 public class Tentacraft
 {
+	@Instance
+	public static Tentacraft instance;
     
 	public static final CreativeTabs itemTab = new CreativeTab();
 	

@@ -1,6 +1,6 @@
 package com.tentacraft.items.tools;
 
-import com.tentacraft.Handlers.ModItems;
+import com.tentacraft.handlers.ModItems;
 import com.tentacraft.items.ItemBase;
 
 import net.minecraft.entity.Entity;

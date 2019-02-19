@@ -1,4 +1,4 @@
-package com.tentacraft.Handlers;
+package com.tentacraft.handlers;
 
 import java.util.ArrayList;
 import java.util.List;

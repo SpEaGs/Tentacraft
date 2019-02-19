@@ -1,9 +1,9 @@
 package com.tentacraft.blocks;
 
 import com.tentacraft.Tentacraft;
-import com.tentacraft.Handlers.IHasModel;
-import com.tentacraft.Handlers.ModBlocks;
-import com.tentacraft.Handlers.ModItems;
+import com.tentacraft.handlers.IHasModel;
+import com.tentacraft.handlers.ModBlocks;
+import com.tentacraft.handlers.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -19,7 +19,7 @@ public class BlockBase extends Block implements IHasModel
 		super(material);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(CreativeTabs.FOOD);
+		setCreativeTab(Tentacraft.itemTab);
 		
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

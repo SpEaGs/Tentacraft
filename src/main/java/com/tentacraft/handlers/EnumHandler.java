@@ -1,4 +1,4 @@
-package com.tentacraft.Handlers;
+package com.tentacraft.handlers;
 
 import net.minecraft.util.IStringSerializable;
 

@@ -1,0 +1,14 @@
+{
+	"type":"minecraft:crafting_shapeless",
+	"ingredients":
+	[
+		{
+			"item": "tentacraft:tentacle_block"
+		}
+	],
+	"result":
+	{
+		"item": "tentacraft:tentacle",
+		"count": 2
+	}
+}

@@ -16,7 +16,7 @@ tile.glow_calamari_block.name=Glowing Calamari Block
 tile.mono_block.name=Monochromatic Block
 tile.biolum_block.name=Bioluminescent Block
 
-//tile.BlockSquidChest.name=Squid Chest
+tile.squid_chest.name=Squid Chest
 //tile.BlockTentalyticConverter.name=Tentalytic Converter
 
 itemGroup.Tentacraft=Tentacraft

@@ -1,0 +1,9 @@
+{
+    "variants":
+	{
+		"facing=north": { "model": "tentacraft:squid_chest"},
+		"facing=south": { "model": "tentacraft:squid_chest", "y": 90},
+		"facing=east": { "model": "tentacraft:squid_chest", "y": 180},
+		"facing=west": { "model": "tentacraft:squid_chest", "y": 270}
+	}
+}

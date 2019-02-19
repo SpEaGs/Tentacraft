@@ -1,4 +1,4 @@
-package com.tentacraft.Handlers;
+package com.tentacraft.handlers;
 
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;

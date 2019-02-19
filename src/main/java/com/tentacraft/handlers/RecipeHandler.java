@@ -1,4 +1,4 @@
-package com.tentacraft.Handlers;
+package com.tentacraft.handlers;
 
 import com.tentacraft.Tentacraft;
 import com.tentacraft.blocks.RegisterBlocks;
@@ -24,7 +24,7 @@ public class RecipeHandler
 		//Squid Net (empty)
 		GameRegistry.addRecipe(new ItemStack(RegisterItems.ItemSquidNet), new Object[] {"SSS", "STS", "SSS", 'S', Items.STRING, 'T', RegisterItems.ItemTentacle});
 		//Squid Chest
-		GameRegistry.addRecipe(new ItemStack(RegisterBlocks.BlockSquidChest), new Object[] {"TTT", "TCT", "TTT", 'T', RegisterItems.ItemTentacle, 'C', Blocks.CHEST});
+		GameRegistry.addRecipe(new ItemStack(RegisterBlocks.TE_SquidChest), new Object[] {"TTT", "TCT", "TTT", 'T', RegisterItems.ItemTentacle, 'C', Blocks.CHEST});
 		//Tentacle Block
 		GameRegistry.addRecipe(new ItemStack(RegisterBlocks.BlockTentacleBlock), new Object[] {"TTT", "TTT", "TTT", 'T', RegisterItems.ItemTentacle});
 		//Tentacle (from Tentacle Block)

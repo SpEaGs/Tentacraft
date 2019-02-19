@@ -1,4 +1,4 @@
-package com.tentacraft.blocks;
+package com.tentacraft.blocks.machines;
 
 import com.tentacraft.tileEntities.TE_SquidChest;
 import com.tentacraft.tileEntities.TE_TentalyticConverter;

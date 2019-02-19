@@ -1,5 +1,7 @@
 package com.tentacraft.proxy;
 
+import com.tentacraft.handlers.RegistryHandler;
+
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -11,7 +13,7 @@ public class Common
 	
 	public void preInit(FMLPreInitializationEvent e)
 	{
-		
+		RegistryHandler.registerTileEntities();
     }
 
     public void init(FMLInitializationEvent e)

@@ -1,4 +1,6 @@
-package com.tentacraft.blocks;
+package com.tentacraft.blocks.decor;
+
+import com.tentacraft.blocks.BlockBase;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

@@ -1,11 +1,17 @@
-package com.tentacraft.Handlers;
+package com.tentacraft.handlers;
+
+import com.tentacraft.Ref;
+import com.tentacraft.tileEntities.TE_SquidChest;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @EventBusSubscriber
 public class RegistryHandler
@@ -43,4 +49,16 @@ public class RegistryHandler
 		}
 	}
 	
+	public static void registerTileEntity(Class cla, String id)
+	{
+		GameRegistry.registerTileEntity(cla, id);
+	}
+	
+	public static void registerTileEntities()
+	{
+		for(Class cla : ModTileEntities.TILE_ENTITIES)
+		{
+			registerTileEntity(cla, Ref.MODID + ":" + cla.getName().toLowerCase());
+		}
+	}
 }

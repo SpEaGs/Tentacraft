@@ -1,8 +1,8 @@
 package com.tentacraft.items;
 
 import com.tentacraft.Tentacraft;
-import com.tentacraft.Handlers.IHasModel;
-import com.tentacraft.Handlers.ModItems;
+import com.tentacraft.handlers.IHasModel;
+import com.tentacraft.handlers.ModItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;

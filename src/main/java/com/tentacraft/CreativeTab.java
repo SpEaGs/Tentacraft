@@ -1,6 +1,6 @@
 package com.tentacraft;
 
-import com.tentacraft.Handlers.ModItems;
+import com.tentacraft.handlers.ModItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
